@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="33" viewBox="0 0 34 33">
+    <defs>
+        <path id="jv1rhtag5a" d="M17.5 0C26.613 0 34 7.387 34 16.5S26.613 33 17.5 33h-1C7.387 33 0 25.613 0 16.5S7.387 0 16.5 0h1z"/>
+        <path id="jsk44frl1d" d="M17.5 0C26.613 0 34 7.387 34 16.5S26.613 33 17.5 33h-1C7.387 33 0 25.613 0 16.5S7.387 0 16.5 0h1z"/>
+        <path id="fvi5hxoh9g" d="M15.085 0C16.69 0 18 1.237 18 2.753v11.493C18 15.763 16.69 17 15.085 17H2.915C1.31 17 0 15.763 0 14.246V2.754C0 1.237 1.31 0 2.916 0h12.169zM17 9H1v5.354C1 15.262 1.83 16 2.853 16h12.272C16.148 16 17 15.243 17 14.335V9zM5 2c-1.111 0-2 .889-2 2s.889 2 2 2 2-.889 2-2-.889-2-2-2zm10.414 3h-6.85C8.247 5 8 5.22 8 5.5s.248.5.563.5h6.874c.315 0 .563-.22.563-.5s-.248-.5-.586-.5zm.02-2h-6.87C8.249 3 8 3.22 8 3.5s.248.5.565.5h6.891c.317 0 .565-.22.543-.5 0-.28-.249-.5-.565-.5z"/>
+        <linearGradient id="jhzlhs6tcb" x1="7.917%" x2="7.917%" y1="10.778%" y2="124.556%">
+            <stop offset="0%" stop-color="#FF5349"/>
+            <stop offset="100%" stop-color="#FE7068"/>
+        </linearGradient>
+        <linearGradient id="8ccg46vose" x1="9.097%" x2="9.097%" y1="10.778%" y2="14.444%">
+            <stop offset="0%" stop-color="#FF5349"/>
+            <stop offset="100%" stop-color="#FE7068"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="r9vc6l6kgc" fill="#fff">
+            <use xlink:href="#jv1rhtag5a"/>
+        </mask>
+        <path fill="url(#jhzlhs6tcb)" d="M-114 803L1326 803 1326 -97 -114 -97z" mask="url(#r9vc6l6kgc)"/>
+        <g>
+            <mask id="ul8kea8x2f" fill="#fff">
+                <use xlink:href="#jsk44frl1d"/>
+            </mask>
+            <path fill="url(#8ccg46vose)" d="M-114 803L1326 803 1326 -97 -114 -97z" mask="url(#ul8kea8x2f)"/>
+        </g>
+        <g transform="translate(8 8)">
+            <mask id="jgcm5dvuxh" fill="#fff">
+                <use xlink:href="#fvi5hxoh9g"/>
+            </mask>
+            <path fill="#FFF" d="M-5 -5L23 -5 23 22 -5 22z" mask="url(#jgcm5dvuxh)"/>
+        </g>
+    </g>
+</svg>
