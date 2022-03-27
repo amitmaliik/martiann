@@ -29,13 +29,13 @@ const Feed = () => {
       </div>
       <div className="rside">
         <Card className="model">
-          <h3 className="mname">Models</h3>
+          <h3 className="mname">Recommendation Algorthims</h3>
           <Card className="m1">
             <p style={{ padding: "0 10px" }}>
-              <b>Model1</b>
+              <b>Algorthim 1</b>
             </p>
             <div className="m">
-              <div>Reccomand Popular Posts Loved by users</div>
+              <div>Reccomand user & content by cosine similarity</div>
               <div>
                 <Switch defaultChecked size="small" />
               </div>
@@ -43,10 +43,10 @@ const Feed = () => {
           </Card>
           <Card style={{ backgroundColor: "#F8F7FB" }} className="m1">
             <p style={{ padding: "0 10px" }}>
-              <b>Model2</b>
+              <b>Algorthim 2</b>
             </p>
             <div className="m">
-              <div>Reccomand Popular Posts Loved by users</div>
+              <div>Reccomand user & content by embeddings based </div>
               <div>
                 <Switch size="small" />
               </div>

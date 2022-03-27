@@ -1,16 +1,6 @@
 import React from "react";
 import { Button, Grid } from "@mui/material";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import Alert from "@mui/material/Alert";
-import {
-  Card,
-  CardContent,
-  InputAdornment,
-  IconButton,
-  OutlinedInput,
-  InputLabel,
-} from "@mui/material";
+import { Card, CardContent, OutlinedInput, InputLabel } from "@mui/material";
 
 export const Wallet = () => {
   const [values, setValues] = React.useState({
@@ -19,24 +9,15 @@ export const Wallet = () => {
     showPassword: false,
   });
 
-  const handleClickShowPassword = () => {
-    setValues({
-      ...values,
-      showPassword: !values.showPassword,
-    });
-  };
-
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value });
   };
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
+
   return (
     <div className="Wallet">
       <Card
         className="Cards"
-        sx={({ minWidth: 100 }, { minHeight: 1000 })}
+        sx={({ minWidth: 80 }, { minHeight: 800 })}
         style={{ backgroundColor: "#16171B" }}
       >
         <CardContent>
@@ -44,8 +25,10 @@ export const Wallet = () => {
             Create a Wallet
           </h1>
           <Grid container spacing={2} className="form">
-            <Grid item xs={8}>
-              <InputLabel style={{ color: "white" }}>Wallet name</InputLabel>
+            <Grid item xs={5}>
+              <InputLabel style={{ color: "white" }}>
+                Pseudo-anonymous username
+              </InputLabel>
               <OutlinedInput
                 type="text"
                 style={{ backgroundColor: "#1F2024", color: "white" }}
@@ -55,73 +38,31 @@ export const Wallet = () => {
                 onChange={handleChange("name")}
               ></OutlinedInput>
             </Grid>
-            <Grid item xs={8}>
-              <InputLabel
-                style={{ color: "white" }}
-                htmlFor="outlined-adornment-password"
-              >
-                Password
+
+            <Grid item xs={5}>
+              <InputLabel style={{ color: "white" }}>
+                Pseudo-anonymous name
               </InputLabel>
               <OutlinedInput
+                type="text"
                 style={{ backgroundColor: "#1F2024", color: "white" }}
+                value={values.name}
                 fullWidth={true}
-                id="outlined-adornment-password"
-                type={values.showPassword ? "text" : "password"}
-                value={values.password}
                 required={true}
-                onChange={handleChange("password")}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
-                      edge="end"
-                    >
-                      {values.showPassword ? (
-                        <VisibilityOff></VisibilityOff>
-                      ) : (
-                        <Visibility></Visibility>
-                      )}
-                    </IconButton>
-                  </InputAdornment>
-                }
-                label="Password"
-              />
+                onChange={handleChange("name")}
+              ></OutlinedInput>
             </Grid>
-            <Grid item xs={8}>
-              <InputLabel
-                style={{ color: "white" }}
-                htmlFor="outlined-adornment-password"
-              >
-                Confirm Password
-              </InputLabel>
+
+            <Grid item xs={6}>
+              <InputLabel style={{ color: "white" }}>Bio</InputLabel>
               <OutlinedInput
+                type="text"
                 style={{ backgroundColor: "#1F2024", color: "white" }}
-                id="utlined-adornment-password"
-                type={values.showPassword ? "text" : "password"}
-                value={values.password}
+                value={values.name}
                 fullWidth={true}
                 required={true}
-                onChange={handleChange("password")}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
-                      edge="end"
-                    >
-                      {values.showPassword ? (
-                        <VisibilityOff></VisibilityOff>
-                      ) : (
-                        <Visibility></Visibility>
-                      )}
-                    </IconButton>
-                  </InputAdornment>
-                }
-                label="Password"
-              />
+                onChange={handleChange("name")}
+              ></OutlinedInput>
             </Grid>
           </Grid>
         </CardContent>
@@ -139,20 +80,21 @@ export const Wallet = () => {
               }}
               className="btn"
               type="submit"
+              o
             >
               Next
             </Button>
           </Grid>
         </Grid>
 
-        <Alert
+        {/* <Alert
           style={{ backgroundColor: "#1F2024", color: "white" }}
           className="warning"
           severity="error"
         >
           Do not forget to save your mnemonic phrase.You will need this to
           access to your wallet
-        </Alert>
+        </Alert> */}
       </Card>
     </div>
   );
