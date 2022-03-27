@@ -8,13 +8,18 @@ import { useNavigate } from "react-router-dom";
 export const Header = () => {
   const navigate = useNavigate();
   return (
-    <Card sx={{ padding: 0 }}>
+    <Card>
       <CardContent>
         {/* logo */}
-        <img style={{}} src={martiann} alt="img" />
+        <img
+          onClick={() => navigate("/", { replace: true })}
+          style={{}}
+          src={martiann}
+          alt="img"
+        />
         {/* search bar */}
         <input
-          style={{ padding: "10px", margin: "20px", width: "300px" }}
+          style={{ padding: "10px", margin: "12px", width: "300px" }}
           id="outlined"
           type="text"
           label=""
@@ -26,6 +31,7 @@ export const Header = () => {
           }}
         >
           <Avatar
+            style={{ width: "24px", height: "24px" }}
             onClick={() => navigate("/search", { replace: true })}
             src={search}
           />
@@ -39,6 +45,7 @@ export const Header = () => {
           }}
         >
           <Avatar
+            style={{ width: "24px", height: "24px" }}
             onClick={() => navigate("/notification", { replace: true })}
             src={noti}
           ></Avatar>
@@ -53,8 +60,7 @@ export const Header = () => {
         >
           <Avatar
             onClick={() => navigate("/profile", { replace: true })}
-            style={{ width: "52px", height: "52px" }}
-            sx={{ height: "10vh", width: "10vw" }}
+            style={{ width: "44px", height: "44px" }}
             src="https://avatars.githubusercontent.com/u/38307844?v=4"
           ></Avatar>
         </IconButton>

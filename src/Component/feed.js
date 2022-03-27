@@ -10,13 +10,13 @@ const Feed = () => {
     <div className="parent">
       <div className="sidebar">
         <Box className="menu" sx={{ display: "flex", flexDirection: "column" }}>
-          <Link style={{ padding: "4px 0" }} to="/">
+          <Link style={{ padding: "12px 0", fontSize: "18px" }} to="/">
             Home
           </Link>
-          <Link style={{ padding: "4px 0" }} to="/explore">
+          <Link style={{ padding: "12px 0", fontSize: "18px" }} to="/explore">
             Explore
           </Link>
-          <Link style={{ padding: "4px 0" }} to="/more">
+          <Link style={{ padding: "12px 0", fontSize: "18px" }} to="/more">
             More
           </Link>
         </Box>

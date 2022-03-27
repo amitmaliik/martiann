@@ -1,4 +1,8 @@
 import React from "react";
+import { Button, Grid } from "@mui/material";
+import Visibility from "@material-ui/icons/Visibility";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
+import Alert from "@mui/material/Alert";
 import {
   Card,
   CardContent,
@@ -7,10 +11,6 @@ import {
   OutlinedInput,
   InputLabel,
 } from "@mui/material";
-import { Grid } from "@mui/material";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import Alert from "@mui/material/Alert";
 
 export const Wallet = () => {
   const [values, setValues] = React.useState({
@@ -127,17 +127,21 @@ export const Wallet = () => {
         </CardContent>
 
         <Grid container spacing={2}>
-          <Grid>
-            <button style={{ background: "white" }} className="btn">
-              cancel
-            </button>
-            <button
-              style={{ background: "#1E67F2" }}
+          <Grid sx={{ p: "24px", mx: "10px" }}>
+            <Button style={{ background: "white" }} className="btn">
+              Cancel
+            </Button>
+            <Button
+              style={{
+                background: "green",
+                color: "white",
+                marginLeft: "12px",
+              }}
               className="btn"
               type="submit"
             >
-              next
-            </button>
+              Next
+            </Button>
           </Grid>
         </Grid>
 
