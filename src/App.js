@@ -1,14 +1,14 @@
-import { Wallet } from "./Component/Create_wallet";
+import { useEffect } from "react";
+import { Header } from "./Component/Header";
 import { Mask } from "./Component/Mask";
 import { Profile } from "./Component/Profile";
-import { Header } from "./Component/Header";
-import Feed from "./Component/feed";
 import { Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { Wallet } from "./Component/CreateWallet";
+import Feed from "./Component/Feed";
 
 function App() {
   useEffect(() => {
-    document.title = "Amit ka App";
+    document.title = "React App";
   }, []);
   return (
     <div className="App">

@@ -10,9 +10,9 @@ import nile from "../assets/nil.jpg";
 export const Follower = () => {
   const followers = [
     { name: "Deepak", src: { nile } },
-    { name: "omkar", src: { nile } },
-    { name: "ashutosh", src: { nile } },
-    { name: "shiv", src: { nile } },
+    { name: "Omkar", src: { nile } },
+    { name: "Ashutosh", src: { nile } },
+    { name: "Shiv", src: { nile } },
   ];
   return (
     <div>
@@ -26,7 +26,6 @@ export const Follower = () => {
             <ListItemIcon>
               <Avatar src={text.src}></Avatar>
             </ListItemIcon>
-
             <ListItemText primary={text.name} />
           </ListItem>
         ))}

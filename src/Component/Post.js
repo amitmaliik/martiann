@@ -20,13 +20,13 @@ export const Post = () => {
                 marginRight: "6px",
                 marginBottom: "8px",
               }}
-              src="shorturl.at/quFQ2"
+              src="https://avatars.githubusercontent.com/u/38307844?v=4"
             ></Avatar>
             Nilesh Dhulshette
           </div>
           <img
             style={{ width: "100%", height: "100%" }}
-            src="https://timelinecovers.pro/facebook-cover/download/batman-looking-at-your-wall-facebook-cover.jpg"
+            src="https://avatars.githubusercontent.com/u/38307844?v=4"
             alt="img"
           />
         </CardContent>
